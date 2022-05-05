@@ -53,10 +53,19 @@ async function getPets() {
 
 getPets();
 // ------------------------------DELETE
+// http://localhost:3306/api/pets/row/delete/1
 async function deletePet(id) {
-  const patvirtinimas = confirm('Ar tikrai trikti?');
+  const patvirtinimas = confirm('Ar tikrai trinti?');
   if (patvirtinimas === false) return;
-  const resp = await fetch(`${baseUrl}/pets/${id}`);
+  const resp = await fetch(`${baseUrl}/pets/row/delete/${id}`);
+  const dataJs = await resp.json();
+  notArchivedPet();
+}
+// -----------------------------------GET notArchived
+async function notArchivedPet() {
+  // http://localhost:3306/api/pets/notArchived
+
+  const resp = await fetch(`${baseUrl}/pets/notArchived`);
   const dataJs = await resp.json();
   getPets();
 }
