@@ -104,7 +104,8 @@ footer {
 }
 /* Add pet======================================================== */
 
-input {
+input,
+select {
   border: 1px solid var(--main-color);
   color: var(--main-color);
   border-radius: 5px;
