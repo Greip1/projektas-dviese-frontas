@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet List</title>
+    <title>Add Pet</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <script src="./addPet.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./petList.js" defer></script>
   </head>
   <body>
     <div class="page-container">
@@ -29,35 +29,15 @@
       <main>
         <div class="main-conatiner">
           <div class="main-title-container">
-            <h1>Pet List</h1>
-            <button class="main-color-btn btn"><a href="addPet.html">ADD PET</a></button>
+            <h1>Add Pet</h1>
+            <button class="main-color-btn btn"><a href="">ADD PET</a></button>
           </div>
           <div class="card-container">
-            <h2>Loading...........</h2>
-            <!--  -->
-            <!-- <div class="card">
-              <h4 class="card-name">name</h4>
-              <p class="card-date">date of birth</p>
-              <p class="card-email">email</p>
-              <div class="buttons-container">
-                <button class="main-color-btn btn">
-                  <a href="./healthLog.html">VIEW LOG</a>
-                </button>
-                <button class="reverse-color-btn btn">DELETE</button>
-              </div>
-            </div> -->
-            <!--  -->
-            <!-- <div class="card">
-              <h4>name</h4>
-              <p>date of birth</p>
-              <p>email</p>
-              <div class="buttons-container">
-                <button class="main-color-btn btn">
-                  <a href="./healthLog.html">VIEW LOG</a>
-                </button>
-                <button class="reverse-color-btn btn">DELETE</button>
-              </div>
-            </div> -->
+            <form action="">
+              <input class="input-name" type="text" value="Persikas" name="name" />
+              <input class="input-dod" type="text" value="2015-15-15" name="dod" />
+              <input class="input-email" type="text" value="persikas@mmm.lt" name="email" />
+            </form>
           </div>
         </div>
       </main>
