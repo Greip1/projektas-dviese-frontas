@@ -44,9 +44,9 @@ function renderCard(petsArr) {
   });
 }
 // --------------------------------GET
-
+// http://localhost:3306/api/pets/notArchived
 async function getPets() {
-  const resp = await fetch(`${baseUrl}/pets`);
+  const resp = await fetch(`${baseUrl}/pets/notArchived`);
   const dataJs = await resp.json();
   renderCard(dataJs);
 }
@@ -58,14 +58,15 @@ async function deletePet(id) {
   const patvirtinimas = confirm('Ar tikrai trinti?');
   if (patvirtinimas === false) return;
   const resp = await fetch(`${baseUrl}/pets/row/delete/${id}`);
-  const dataJs = await resp.json();
-  notArchivedPet();
-}
-// -----------------------------------GET notArchived
-async function notArchivedPet() {
-  // http://localhost:3306/api/pets/notArchived
-
-  const resp = await fetch(`${baseUrl}/pets/notArchived`);
-  const dataJs = await resp.json();
+  //   const dataJs = await resp.json();
   getPets();
 }
+// -----------------------------------GET notArchived
+// async function notArchivedPet() {
+//   // http://localhost:3306/api/pets/notArchived
+//   http://localhost:3306/api/pets/notArchived
+
+//   const resp = await fetch(`${baseUrl}/pets/notArchived`);
+//   const dataJs = await resp.json();
+//   renderCard(dataJs)
+// }
