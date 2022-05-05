@@ -46,11 +46,19 @@ header img {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
 .btn {
   border: none;
   border-radius: 5px;
   padding: 10px 25px;
   font-size: 12px;
+  margin-bottom: 5px;
+}
+.buttons-container .btn {
+  flex-grow: 1;
 }
 .main-color-btn {
   background-color: var(--main-color);
@@ -88,11 +96,3 @@ footer {
   margin-top: 50px;
 }
 
-/* log css */
-
-.filter-container {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-}
