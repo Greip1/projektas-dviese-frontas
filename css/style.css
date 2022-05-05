@@ -102,3 +102,13 @@ footer {
   margin-bottom: 10px;
   align-items: center;
 }
+/* Add pet======================================================== */
+
+input {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
