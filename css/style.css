@@ -51,6 +51,7 @@ header img {
   border-radius: 5px;
   padding: 10px 25px;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 .main-color-btn {
   background-color: var(--main-color);
@@ -78,15 +79,12 @@ header img {
   font-weight: 100;
 }
 .card-date {
-    margin-bottom: 5px;
- 
+  margin-bottom: 5px;
 }
 .card-email {
-    margin-bottom: 18px;
- 
+  margin-bottom: 18px;
 }
 footer {
-    text-align: center;
-    margin-top: 
-        50px
-    };
+  text-align: center;
+  margin-top: 50px;
+}
