@@ -78,15 +78,21 @@ header img {
   font-weight: 100;
 }
 .card-date {
-    margin-bottom: 5px;
- 
+  margin-bottom: 5px;
 }
 .card-email {
-    margin-bottom: 18px;
- 
+  margin-bottom: 18px;
 }
 footer {
-    text-align: center;
-    margin-top: 
-        50px
-    };
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* log css */
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
