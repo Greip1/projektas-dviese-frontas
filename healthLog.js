@@ -2,6 +2,8 @@ const baseUrl = 'http://localhost:3306/api';
 const containerEl = document.querySelector('.card-container');
 const nameIdEl = window.location.search.slice(1);
 const nameEl = document.querySelector('.name-span');
+const addPrescriptionBtnEl = document.querySelector('.add-prescription');
+console.log(addPrescriptionBtnEl);
 
 // http://localhost:3306/api/pets/select/
 
@@ -44,3 +46,9 @@ function renderCard(petsArr) {
     createCard(petObj);
   });
 }
+//-------------------------------------
+//------------------------------------
+addPrescriptionBtnEl.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.location.href = `prescription.html?${nameIdEl}`;
+});
